@@ -26,11 +26,11 @@ fourth.addEventListener("click", ()=>{
 const redColor = document.getElementById("wishlist");
 redColor.addEventListener("click", ()=>{
     let wish = document.getElementById("wish").style.color;
-    if (wish == "red"){
+    if (wish == "rgb(200, 114, 126)"){
         document.getElementById("wish").style.color = "white";
     }
     else{
-        document.getElementById("wish").style.color = "red";
+        document.getElementById("wish").style.color = "rgb(200, 114, 126)";
     }
 })
 
