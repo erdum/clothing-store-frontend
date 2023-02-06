@@ -147,12 +147,12 @@ body {
     align-items: center;
     padding: 5px;
     /* border:  1px solid white; */
-    background-color: #ffffff;
+    background-color: #dbdbdb;
     border-radius: 20px;
     margin-bottom: 8px;
 }
 .info-main:hover{
-    background-color: #fffffff1;
+    background-color: #dbdbdbd7;
 }
 .info-main img{
     width: 120px;
@@ -170,7 +170,7 @@ body {
 }
 .price-sec{
     /* border: 1px solid #fff; */
-    background-color: #ffffff;
+    background-color: #dbdbdb;
     border-radius: 20px;
     margin: 5px 0 0 0;
     padding: 5px;

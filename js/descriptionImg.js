@@ -22,7 +22,6 @@ fourth.addEventListener("click", ()=>{
 })
 
 
-
 // // Wishlist Color Change:
 // const redColor = document.getElementById("wishlist");
 // redColor.addEventListener("click", ()=>{
@@ -34,7 +33,6 @@ fourth.addEventListener("click", ()=>{
 //         document.getElementById("wish").style.color = "red";
 //     }
 // })
-
 
 
 // Cart button Change:
