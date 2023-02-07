@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Details</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,500&display=swap"
         rel="stylesheet">
@@ -14,7 +13,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- FavIcon Link -->
     <link rel="shortcut icon" href="./images/favicon/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/clientDes.css">
+    <title>Your Order's</title>
+    <link rel="stylesheet" href="./css/orders.css">
     <link rel="stylesheet" href="./css/header.css">
 </head>
 
@@ -139,52 +139,112 @@
         </div>
 
     </header>
+
     <div class="container">
-        <div class="order-title">
-            <h3>Order Number # <span id="uniqueId">845345</span></h3>
-            <h4>Status: <span id="status">Delivered</span></h4>
+        <h1>Orders</h1>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
         </div>
-
-        <div class="printing">
-            <i class="fa-solid fa-print"></i> Print Invoice
+    </div>
+    <div class="heck">
+        <div class="title-container">
+            <span id="your-orders" class="extra active">Your Order's</span>
+            <span id="products-Info" class="extra">Products Info</span>
         </div>
-
-        <div class="addresses">
-            <span id="general">General</span>
-            <div class="container-box">
-                <h4>Customer Information</h4>
-                <div class="container-address">
-                    <div class="billing-address add-main">
-                        <h5>Billing Address:</h5>
-                        <p class="name">Syed M Erdum Adnan</p>
-                        <p class="email">erdumadnan@gmail.com</p>
-                        <p class="number">03421234567</p>
-                        <p class="cl-address">House # L-2746, Metroville-3, Scheme-33, Gulzar-e-hijri, Karachi</p>
-                        <p class="province">Sindh</p>
-                        <p class="country">Pakistan</p>
-                    </div>
-                    <div class="shipping-address add-main">
-                        <h5>Shipping Address:</h5>
-                        <p class="name">Syed M Erdum Adnan</p>
-                        <p class="email">erdumadnan@gmail.com</p>
-                        <p class="number">03421234567</p>
-                        <p class="cl-address">House # L-2746, Metroville-3, Scheme-33, Gulzar-e-hijri, Karachi</p>
-                        <p class="province">Sindh</p>
-                        <p class="country">Pakistan</p>
-                    </div>
-                    <div class="contact-info add-main">
-                        <h5>Contact Information:</h5>
-                        <p class="first-name">Erdum</p>
-                        <p class="last-name">Adnan</p>
-                        <p class="email">erdumadnan@gmail.com</p>
-                        <p class="number">03421234567</p>
-                    </div>
+        <div class="orders prev-order">
+            <div class="titles">
+                <div class="order-num title">
+                    <h4>Order Number</h4>
+                </div>
+                <div class="status title">
+                    <h4>Status</h4>
+                </div>
+                <div class="customer title">
+                    <h4>Customer</h4>
+                </div>
+                <div class="date title">
+                    <h4>Date</h4>
+                </div>
+                <div class="total title">
+                    <h4>Total</h4>
                 </div>
             </div>
-        </div>
+            <div class="order-det">
+                <div class="order-num det">
+                    <p><span>#85141</span></p>
+                </div>
+                <div class="status det">
+                    <p>Delivered</p>
+                </div>
+                <div class="customer det">
+                    <p>Erdum Adnan</p>
+                    <p><span>erdumadnan@gmail.com</span></p>
+                </div>
+                <div class="date det">
+                    <p>04/01/2023, 11:11 PM</p>
+                </div>
+                <div class="total det">
+                    <h4>Rs: <span>9140</span></h4>
+                </div>
+            </div>
+            <div class="order-det">
+                <div class="order-num det">
+                    <p><span>#85141</span></p>
+                </div>
+                <div class="status det">
+                    <p>Delivered</p>
+                </div>
+                <div class="customer det">
+                    <p>Erdum Adnan</p>
+                    <p><span>erdumadnan@gmail.com</span></p>
+                </div>
+                <div class="date det">
+                    <p>04/01/2023, 11:11 PM</p>
+                </div>
+                <div class="total det">
+                    <h4>Rs: <span>9140</span></h4>
+                </div>
+            </div>
+            <div class="order-det">
+                <div class="order-num det">
+                    <p><span>#85141</span></p>
+                </div>
+                <div class="status det">
+                    <p>Delivered</p>
+                </div>
+                <div class="customer det">
+                    <p>Erdum Adnan</p>
+                    <p><span>erdumadnan@gmail.com</span></p>
+                </div>
+                <div class="date det">
+                    <p>04/01/2023, 11:11 PM</p>
+                </div>
+                <div class="total det">
+                    <h4>Rs: <span>9140</span></h4>
+                </div>
+            </div>
+            <div class="order-det">
+                <div class="order-num det">
+                    <p><span>#85141</span></p>
+                </div>
+                <div class="status det">
+                    <p>Delivered</p>
+                </div>
+                <div class="customer det">
+                    <p>Erdum Adnan</p>
+                    <p><span>erdumadnan@gmail.com</span></p>
+                </div>
+                <div class="date det">
+                    <p>04/01/2023, 11:11 PM</p>
+                </div>
+                <div class="total det">
+                    <h4>Rs: <span>9140</span></h4>
+                </div>
+            </div>
 
-        <div class="product-info">
-            <h4>Product Information</h4>
+        </div>
+        <div class="orders pr-info">
             <div class="des-product">
                 <div class="main-des des">
                     <h5>Product Information:</h5>
@@ -213,43 +273,84 @@
                     <p>Rs: <span class="pr">450</span></p>
                 </div>
             </div>
-        </div>
+            <div class="des-product">
+                <div class="main-des des">
+                    <h5>Product Information:</h5>
+                    <div class="products-des">
+                        <img src="./images/girls-carousel/Girls_Pret_3_4.jpg" alt="product img">
+                        <div class="item-des">
+                            <h5>Girls Uniform Tshirt Well designed</h5>
+                            <p>Product Number# <span>AJQ41232334</span></p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="price-des des">
+                    <h5>Price:</h5>
+                    <p>Rs: <span class="pr">450</span></p>
+                </div>
+                <hr>
+                <div class="quant des">
+                    <h5>Quantity:</h5>
+                    <p>1</p>
+                </div>
+                <hr>
 
-        <div class="summary">
-            <h4>Summary</h4>
-            <div class="summary-box">
-                <div class="pay-method method">
-                    <p>Payment Method</p>
-                    <p>Cash on delivery</p>
-                </div>
-                <div class="ship-method method">
-                    <p>Shipment Method</p>
-                    <p>Cash on delivery</p>
-                </div>
-                <div class="tracking-method method">
-                    <p>Tracking Id</p>
-                    <p><span id="track-num">Aj9874375987</span></p>
-                </div>
-                <div class="sub-total method">
-                    <p>Subtotal:</p>
-                    <p>Rs: <span id="sub-pr">9590</span></p>
-                </div>
-                <div class="shipping-cost method">
-                    <p>Shipping Cost</p>
-                    <p>Rs: <span id="ship-pr">350</span></p>
-                </div>
-                <div class="total-pr method">
-                    <p>Total</p>
-                    <p>Rs: <span id="sum-pr">9940</span></p>
+                <div class="subtotal des">
+                    <h5>Subtotal</h5>
+                    <p>Rs: <span class="pr">450</span></p>
                 </div>
             </div>
-        </div>
-    </div>
+            <div class="des-product">
+                <div class="main-des des">
+                    <h5>Product Information:</h5>
+                    <div class="products-des">
+                        <img src="./images/girls-carousel/Girls_Pret_3_4.jpg" alt="product img">
+                        <div class="item-des">
+                            <h5>Girls Uniform Tshirt Well designed</h5>
+                            <p>Product Number# <span>AJQ41232334</span></p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="price-des des">
+                    <h5>Price:</h5>
+                    <p>Rs: <span class="pr">450</span></p>
+                </div>
+                <hr>
+                <div class="quant des">
+                    <h5>Quantity:</h5>
+                    <p>1</p>
+                </div>
+                <hr>
 
+                <div class="subtotal des">
+                    <h5>Subtotal</h5>
+                    <p>Rs: <span class="pr">450</span></p>
+                </div>
+            </div>
+            </div>
+
+
+    </div>
     <script>
-        const print = document.querySelector(".printing");
-        print.addEventListener("click", () => {
-            window.print();
+        const yourOrder = document.getElementById("your-orders");
+        const productInfo = document.getElementById("products-Info");
+        yourOrder.addEventListener("click", ()=> {
+            productInfo.classList.remove("active")
+            yourOrder.classList.toggle("active")
+            const prev = document.querySelector(".prev-order");
+            const prInfo = document.querySelector(".pr-info");
+            prev.style.display = "initial";
+            prInfo.style.display = "none";            
+        })
+        productInfo.addEventListener("click", ()=> {
+            yourOrder.classList.remove("active")
+            productInfo.classList.toggle("active")
+            const prev = document.querySelector(".prev-order");
+            const prInfo = document.querySelector(".pr-info");
+            prev.style.display = "none";
+            prInfo.style.display = "initial";            
         })
     </script>
     <script src="./js/itemvalue.js"></script>
