@@ -105,6 +105,8 @@ body {
 .details{
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 .details button{
     height: 35px;
@@ -180,7 +182,8 @@ body {
 }
 .final{
     display: flex;
-    padding: 3px;
+    padding: 5px;
+    margin-bottom: 5px;
 }
 @media (max-width:768px){
     .container{
