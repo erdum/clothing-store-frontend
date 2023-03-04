@@ -1,58 +1,59 @@
-
 /* ScrollBAR */
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
 }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: transparent; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: transparent; 
-    border-radius: 20px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: transparent; 
-  }
 
-*{
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
 
-body{
+body {
     min-height: 100vh;
     background: #FDF9EE;
 }
 
 /* HEADER */
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     background: #FDF9EE;
-    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index:1000;
+    z-index: 1000;
     height: 8vh;
 }
-.search{
+
+.search {
     display: flex;
     justify-content: space-around;
     margin: 5% 5px 0 5px;
 }
-.search-bar{
+
+.search-bar {
     outline: none;
     border: 1px solid #0e97f9;
     padding: 8px;
@@ -60,10 +61,12 @@ header{
     color: white;
     border-radius: 20px;
 }
-.search-bar::placeholder{
+
+.search-bar::placeholder {
     color: #fff;
 }
-.search i{
+
+.search i {
     color: white;
     background-color: #0e97f9;
     border-radius: 20px;
@@ -72,30 +75,35 @@ header{
     margin-left: 3px;
 }
 
-header img{
+header img {
     width: 130px;
     height: 80px;
 }
-header .navbar ul{
+
+header .navbar ul {
     list-style-type: none;
 }
-header .navbar ul li{
+
+header .navbar ul li {
     position: relative;
     float: left;
-    
+
 }
-header .navbar ul li a{
+
+header .navbar ul li a {
     font-size: 20px;
     padding: 14px;
     color: #0e97f9;
     display: block;
 }
-header .navbar ul li a:hover{
+
+header .navbar ul li a:hover {
     border-radius: 10px;
     background: #0e97f9;
     color: #fff;
 }
-header .navbar ul li ul{
+
+header .navbar ul li ul {
     position: absolute;
     left: 0;
     top: 7vh;
@@ -104,30 +112,32 @@ header .navbar ul li ul{
     display: none;
     border-radius: 0 0 10px 10px;
 }
-header .navbar ul li ul li{
+
+header .navbar ul li ul li {
     width: 100%;
     /* border-top: 1px solid rgb(235, 231, 231); */
 }
 
-header .navbar ul li ul li ul{
+header .navbar ul li ul li ul {
     left: 200px;
     top: 0;
     border-radius: 0 10px 10px 10px;
 }
 
-header .navbar ul li:focus-within > ul,
-header .navbar ul li:hover > ul{
+header .navbar ul li:focus-within>ul,
+header .navbar ul li:hover>ul {
     display: initial;
 }
 
-#menu-bar{
+#menu-bar {
     display: none;
 }
-header label{
+
+header label {
     font-size: 20px;
     color: #0e97f9;
-    cursor:pointer;
-    margin:0 0 0 8px;
+    cursor: pointer;
+    margin: 0 0 0 8px;
     display: none;
 }
 
@@ -138,7 +148,8 @@ header label{
     display: flex;
     align-items: center;
 }
-.user-cart .cart{
+
+.user-cart .cart {
     color: #0e97f9;
     cursor: pointer;
     display: flex;
@@ -147,11 +158,13 @@ header label{
     align-items: center;
     position: relative;
 }
+
 /* Cart */
-.user-cart{
+.user-cart {
     display: flex;
     align-items: center;
 }
+
 .user-cart #user {
     margin: 0 5px 0 10px;
     width: 40px;
@@ -162,11 +175,13 @@ header label{
     border-radius: 50%;
     cursor: pointer;
 }
-.user{
+
+.user {
     display: flex;
 }
+
 /* Cart Dropdown Menu */
-.popup{
+.popup {
     width: 35vw;
     /* min-height: 160px; */
     max-height: 400px;
@@ -183,44 +198,51 @@ header label{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     display: none;
 }
-.elem_container{
+
+.elem_container {
     padding: 7px;
 }
-.popup .total{
+
+.popup .total {
     margin: 0 10px 0 10px;
     display: flex;
     justify-content: space-between;
 }
-.checkout-btn{
-        width: 80px;
-        height: 30px;
-        color: white;
-        border: none;
-        border-radius: 10px;
-        background-color: #0e97f9;
-        /* margin-left: 2%; */
-        font-weight: 500z;
+
+.checkout-btn {
+    width: 80px;
+    height: 30px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: #0e97f9;
+    /* margin-left: 2%; */
+    font-weight: 500z;
 }
-.checkout-btn a{
+
+.checkout-btn a {
     color: #fff;
     font-size: 16px;
 }
-.checkout-btn:hover{
+
+.checkout-btn:hover {
     background-color: #0e97f9bc;
 
 }
-.total_container{
+
+.total_container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-.total_container p{
+
+.total_container p {
     color: #000;
     font-size: 18px;
 }
 
 /* Cart internal element */
-.element{
+.element {
     color: #000;
     display: flex;
     height: 50%;
@@ -230,49 +252,55 @@ header label{
     overflow: hidden;
     border: 1px solid #0e97f9;
     border-radius: 10px;
-    margin: 3px 0 3px 0 ;
+    margin: 3px 0 3px 0;
 }
-.element:hover{
+
+.element:hover {
     background: #d6d5d287;
     border-radius: 10px;
 }
-.element p{
+
+.element p {
     color: #000;
 }
 
-.des{
+.des {
     margin-left: 10px;
 }
-.des h3{
+
+.des h3 {
     color: #0e97f9;
 }
-.element .img_des{
+
+.element .img_des {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
 }
-.element img{
+
+.element img {
     width: 100px;
     height: 100px;
     border-radius: 10px;
     margin-right: 10px;
 }
 
-.quantity_pr{
+.quantity_pr {
     display: flex;
     justify-content: center;
     margin-top: 5px;
 }
 
-.quantity{
+.quantity {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 0 0 20px;
 
 }
-.quantity .quantity_btn{
+
+.quantity .quantity_btn {
     width: 20px;
     height: 20px;
     color: #fff;
@@ -282,53 +310,118 @@ header label{
     border: none;
     cursor: pointer;
 }
-.quantity .quantity_value{
+
+.quantity .quantity_value {
     width: 20px;
     text-align: center;
-    height:auto;
+    height: auto;
 }
 
-.price{
+.price {
     display: flex;
     margin: 0 20px 0 auto;
-    
+
 }
-.price span{
+
+.price span {
     font-weight: 600;
     color: #0e97f9;
 }
-.ex{
+
+.ex {
     display: none;
 }
 
 
 
-@media (max-width:600px){
-    #user{
+/* New Code for user popup */
+.user-opt {
+    position: absolute;
+    top: 9vh;
+    right: 20px;
+    width: 20rem;
+    /* height: 20rem; */
+    border-radius: 20px;
+    gap: 10px;
+    background: #FDF9EE;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 10px;
+    display: none;
+}
+
+.user-opt-content {
+    /* position: absolute; */
+    width: 98%;
+    border-radius: 10px;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 15px 3px 15px;
+    background: #a8cbf29b;
+    /* margin-bottom: 10px; */
+    cursor: pointer;
+}
+
+.user-opt-content:hover {
+    background: #7ab3f39b;
+}
+
+.user-opt-content p {
+    color: #0e97f9;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.user-opt-content i {
+    color: #0e97f9;
+    font-size: 18px;
+}
+
+.userclickable {
+    opacity: 1;
+}
+
+.userclickable:hover {
+    opacity: 0.8;
+}
+
+
+@media (max-width:600px) {
+    #user {
         display: none;
     }
-    #cart{
+
+    #cart {
         display: none;
     }
-    .ex{
+
+    .ex {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 5vh;
     }
-    .ex img{
+
+    .ex img {
         width: 30px;
         height: 30px;
         border: 1px solid #0e97f9;
         border-radius: 50%;
         margin-left: auto;
     }
-    .ex input{
+
+    .ex input {
         height: 30px;
         width: 120px;
-        margin-left:auto;
+        margin-left: auto;
     }
-    .ex .search{
+
+    .ex .search {
         margin-right: auto;
         background-color: #0e97f9;
         width: 30px;
@@ -339,60 +432,72 @@ header label{
         align-items: center;
         border-radius: 50%;
     }
-    .ex .bag{
+
+    .ex .bag {
         margin-right: auto;
         margin-left: 7px;
     }
-    header{
+
+    header {
         padding: 20px;
     }
-    header label i{
+
+    header label i {
         font-size: 24px;
         padding-top: 10px;
         text-align: center;
         color: #0e97f9;
     }
-    header label{
+
+    header label {
         display: initial;
     }
-    header .navbar{
+
+    header .navbar {
         position: absolute;
         top: 100%;
         left: 0;
-        right:0;
+        right: 0;
         background: #FDF9EE;
         border-top: 1px solid rgb(235, 231, 231);
         display: none;
     }
-    header .navbar ul li{
+
+    header .navbar ul li {
         width: 100%;
     }
-    header .navbar ul li ul{
+
+    header .navbar ul li ul {
         position: relative;
         width: 100%;
         top: 0;
     }
-    header .navbar ul li ul li{
+
+    header .navbar ul li ul li {
         background: #FDF9EE;
     }
-    header .navbar ul li ul li ul{
+
+    header .navbar ul li ul li ul {
         width: 100%;
         left: 0;
     }
 
-    #menu-bar:checked ~ .navbar{
+    #menu-bar:checked~.navbar {
         display: initial;
     }
-    .search{
+
+    .search {
         display: flex;
         justify-content: center;
         margin: 1%;
 
     }
-    .popup{
+
+    .popup {
         width: 100vw;
     }
-    header img{
+
+    header img {
         width: 100px;
         height: 70px;
     }
@@ -400,6 +505,15 @@ header label{
 
 
 
-
-
-
+/* Bug fixes for 4k screensize */
+@media (min-width:2000px) {
+    header .navbar ul li ul {
+        position: absolute;
+        left: 0;
+        top: 5.5vh;
+        width: 200px;
+        background: #FDF9EE;
+        display: none;
+        border-radius: 0 0 10px 10px;
+    }
+}

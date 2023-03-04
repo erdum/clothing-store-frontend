@@ -37,7 +37,7 @@
         <input type="checkbox" id="menu-bar">
         <nav class="navbar">
             <ul>
-                
+
                 <li class="ex">
                     <a href="./cart.html"><i class="fa fa-shopping-bag bag"></i></a>
                     <input type="text" class="search-bar" placeholder="Search">
@@ -45,7 +45,7 @@
                     <a href="login.html">
                         <img src="./images/user.jpg" alt="">
                     </a>
-                </div>
+                    </div>
 
                 </li>
                 <li><a href="./index.html">Home</a></li>
@@ -101,8 +101,8 @@
         </nav>
 
         <div class="user-cart">
-        <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
-        
+            <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
+
             <div class="cart" id="cart">
                 <i class="fa fa-shopping-bag" id="cart"></i>
                 <div class="popup" id="popup">
@@ -128,21 +128,37 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                     <div class="total">
                         <button class="checkout-btn"><a href="./checkout.html">Checkout</a></button>
                         <div class="total_container">
-                            <h3><pre>Total: $ </pre></h3>
+                            <h3>
+                                <pre>Total: $ </pre>
+                            </h3>
                             <p id="total-price">120</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div>
-                <a href="login.html">
-                    <img src="./images/user.jpg" alt="" id="user">
-                </a>
+                <img src="./images/user.jpg" alt="" id="user" class="userclickable" onclick="handleOnClick()">
+
+                <div class="user-opt" id="userclick">
+                    <div class="user-opt-content">
+                        <p>Contact Us</p>
+                        <i class="fa-solid fa-message"></i>
+                    </div>
+                    <div class="user-opt-content">
+                        <p>My Order</p>
+                        <i class="fa-solid fa-location-arrow"></i>
+                    </div>
+                    <div class="user-opt-content">
+                        <p>Logout</p>
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -165,211 +181,220 @@
         <!-- Object -->
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="feature feature1 ">
-                    <a href="#">
-                    <img src="./images/men/f1.jpg" class="fea-img" alt="">
-                    </a>
-                    <div class="des">
-                        <span>adidas</span>
-                        <h5>Cartoon Astronaut T-Shirts</h5>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <h4>$78</h4>
-                    </div>
-                <a href="#" class="addToCart"><i class="fa-solid fa-cart-shopping" class="addToCart"></i>Add to Cart</a>
-                    
-                    
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="feature feature2">
-                    <a href="#">
-                    <img src="./images/men/f2.jpg" class="fea-img" alt="">
-                    </a>
-                    <div class="des">
-                        <span>adidas</span>
-                        <h5>Cartoon Astronaut T-Shirts</h5>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <h4>$78</h4>
-                    </div>
-                <a href="#" class="addToCart"><i class="fa-solid fa-cart-shopping" class="addToCart"></i>Add to Cart</a>
-                    
-                    
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="feature feature3">
-                    <a href="#">
-                    <img src="./images/men/f3.jpg" class="fea-img" alt="">
-                    </a>
-                    <div class="des">
-                        <span>adidas</span>
-                        <h5>Cartoon Astronaut T-Shirts</h5>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <h4>$78</h4>
-                    </div>
-                <a href="#" class="addToCart"><i class="fa-solid fa-cart-shopping" class="addToCart"></i>Add to Cart</a>
-                    
-                    
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="feature feature4">
-                    <a href="#">
-                    <img src="./images//men/f4.jpg" class="fea-img" alt="">
-                    </a>
-                    <div class="des">
-                        <span>adidas</span>
-                        <h5>Cartoon Astronaut T-Shirts</h5>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <h4>$72</h4>
-                    </div>
-                <a href="#" class="addToCart"><i class="fa-solid fa-cart-shopping" class="addToCart"></i>Add to Cart</a>
-                    
-                    
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="feature feature5">
-                    <a href="#">
-                    <img src="./images/men/f5.jpg" class="fea-img" alt="">
-                    </a>
-                    <div class="des">
-                        <span>adidas</span>
-                        <h5>Cartoon Astronaut T-Shirts</h5>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <h4>$72</h4>
-                    </div>
-                <a href="#" class="addToCart"><i class="fa-solid fa-cart-shopping" class="addToCart"></i>Add to Cart</a>
-                    
-                    
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="feature feature6">
-                    <a href="#">
-                    <img src="./images/men/f6.jpg" class="fea-img" alt="">
-                    </a>
-                    <div class="des">
-                        <span>Levi's</span>
-                        <h5>Multicoloured Casual Shirts</h5>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
+                <div class="swiper-slide">
+                    <div class="feature feature1 ">
+                        <a href="#">
+                            <img src="./images/men/f1.jpg" class="fea-img" alt="">
+                        </a>
+                        <div class="des">
+                            <span>adidas</span>
+                            <h5>Cartoon Astronaut T-Shirts</h5>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h4>$78</h4>
                         </div>
-                        <h4>$90</h4>
-                    </div>
-                <a href="#" class="addToCart"><i class="fa-solid fa-cart-shopping" class="addToCart"></i>Add to Cart</a>
+                        <a href="#" class="addToCart"><i class="fa-solid fa-cart-shopping" class="addToCart"></i>Add to
+                            Cart</a>
 
-                    
-                    
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="feature feature7">
-                    <a href="#">
-                    <img src="./images/men/f7.jpg" class="fea-img" alt="">
-                    </a>
-                    <div class="des">
-                        <span>Limelight</span>
-                        <h5>Limelight Ladies Trouser</h5>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <h4>$94</h4>
-                    </div>
-                <a href="#" class="addToCart"><i class="fa-solid fa-cart-shopping" class="addToCart"></i>Add to Cart</a>
-                    
-                    
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="feature feature8">
-                    <a href="#">
-                    <img src="./images/men/f8.jpg" class="fea-img" alt="">
-                    </a>
-                    <div class="des">
-                        <span>Limelight</span>
-                        <h5>Ladies Summer Kurti</h5>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <h4>$74</h4>
-                    </div>
-                <a href="#" class="addToCart"><i class="fa-solid fa-cart-shopping" class="addToCart"></i>Add to Cart</a>
-                    
-                    
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="feature feature9">
-                    <a href="#">
-                    <img src="./images/men/f8.jpg" class="fea-img" alt="">
-                    </a>
-                    <div class="des">
-                        <span>Limelight</span>
-                        <h5>Ladies Summer Kurti</h5>
-                        <div class="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <h4>$74</h4>
-                    </div>
-                <a href="#" class="addToCart"><i class="fa-solid fa-cart-shopping" class="addToCart"></i>Add to Cart</a>
 
-                    
-                    
+                    </div>
                 </div>
-              </div>
+                <div class="swiper-slide">
+                    <div class="feature feature2">
+                        <a href="#">
+                            <img src="./images/men/f2.jpg" class="fea-img" alt="">
+                        </a>
+                        <div class="des">
+                            <span>adidas</span>
+                            <h5>Cartoon Astronaut T-Shirts</h5>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h4>$78</h4>
+                        </div>
+                        <a href="#" class="addToCart"><i class="fa-solid fa-cart-shopping" class="addToCart"></i>Add to
+                            Cart</a>
+
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feature feature3">
+                        <a href="#">
+                            <img src="./images/men/f3.jpg" class="fea-img" alt="">
+                        </a>
+                        <div class="des">
+                            <span>adidas</span>
+                            <h5>Cartoon Astronaut T-Shirts</h5>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h4>$78</h4>
+                        </div>
+                        <a href="#" class="addToCart"><i class="fa-solid fa-cart-shopping" class="addToCart"></i>Add to
+                            Cart</a>
+
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feature feature4">
+                        <a href="#">
+                            <img src="./images//men/f4.jpg" class="fea-img" alt="">
+                        </a>
+                        <div class="des">
+                            <span>adidas</span>
+                            <h5>Cartoon Astronaut T-Shirts</h5>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h4>$72</h4>
+                        </div>
+                        <a href="#" class="addToCart"><i class="fa-solid fa-cart-shopping" class="addToCart"></i>Add to
+                            Cart</a>
+
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feature feature5">
+                        <a href="#">
+                            <img src="./images/men/f5.jpg" class="fea-img" alt="">
+                        </a>
+                        <div class="des">
+                            <span>adidas</span>
+                            <h5>Cartoon Astronaut T-Shirts</h5>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h4>$72</h4>
+                        </div>
+                        <a href="#" class="addToCart"><i class="fa-solid fa-cart-shopping" class="addToCart"></i>Add to
+                            Cart</a>
+
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feature feature6">
+                        <a href="#">
+                            <img src="./images/men/f6.jpg" class="fea-img" alt="">
+                        </a>
+                        <div class="des">
+                            <span>Levi's</span>
+                            <h5>Multicoloured Casual Shirts</h5>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h4>$90</h4>
+                        </div>
+                        <a href="#" class="addToCart"><i class="fa-solid fa-cart-shopping" class="addToCart"></i>Add to
+                            Cart</a>
+
+
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feature feature7">
+                        <a href="#">
+                            <img src="./images/men/f7.jpg" class="fea-img" alt="">
+                        </a>
+                        <div class="des">
+                            <span>Limelight</span>
+                            <h5>Limelight Ladies Trouser</h5>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h4>$94</h4>
+                        </div>
+                        <a href="#" class="addToCart"><i class="fa-solid fa-cart-shopping" class="addToCart"></i>Add to
+                            Cart</a>
+
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feature feature8">
+                        <a href="#">
+                            <img src="./images/men/f8.jpg" class="fea-img" alt="">
+                        </a>
+                        <div class="des">
+                            <span>Limelight</span>
+                            <h5>Ladies Summer Kurti</h5>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h4>$74</h4>
+                        </div>
+                        <a href="#" class="addToCart"><i class="fa-solid fa-cart-shopping" class="addToCart"></i>Add to
+                            Cart</a>
+
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="feature feature9">
+                        <a href="#">
+                            <img src="./images/men/f8.jpg" class="fea-img" alt="">
+                        </a>
+                        <div class="des">
+                            <span>Limelight</span>
+                            <h5>Ladies Summer Kurti</h5>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <h4>$74</h4>
+                        </div>
+                        <a href="#" class="addToCart"><i class="fa-solid fa-cart-shopping" class="addToCart"></i>Add to
+                            Cart</a>
+
+
+
+                    </div>
+                </div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
-          </div>
+        </div>
     </section>
 
     <!-- WOMEN CAROUSEL -->
@@ -383,65 +408,65 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory Page -->
-                    <img src="./images/women-carousel/Women_Pret_1_9.jpg" alt="">
-                    <div class="more">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
-                </a>
-                </div>
-                <div class="swiper-slide main">
-                    <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/women-carousel/Women_Fragrance.jpg" alt="">
-                    <div class="more">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/women-carousel/Women_Pret_1_9.jpg" alt="">
+                        <div class="more">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/women-carousel/Women_Uns_1.jpg" alt="">
-                    <div class="more">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/women-carousel/Women_Fragrance.jpg" alt="">
+                        <div class="more">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/women-carousel/Women_Trousers_1_1.jpg" alt="">
-                    <div class="more">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/women-carousel/Women_Uns_1.jpg" alt="">
+                        <div class="more">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/women-carousel/Women_Footwear_1_6.jpg" alt="">
-                    <div class="more">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/women-carousel/Women_Trousers_1_1.jpg" alt="">
+                        <div class="more">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/women-carousel/Women_Bags_1_7.jpg" alt="">
-                    <div class="more">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/women-carousel/Women_Footwear_1_6.jpg" alt="">
+                        <div class="more">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/women-carousel/scarves_2_2_1.jpg" alt="">
-                    <div class="more">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/women-carousel/Women_Bags_1_7.jpg" alt="">
+                        <div class="more">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide main">
+                    <a href="#"><!--Add link to the Catgory page -->
+                        <img src="./images/women-carousel/scarves_2_2_1.jpg" alt="">
+                        <div class="more">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
 
@@ -464,83 +489,83 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/men-carousel/Men_Outerwear_1_9.jpg" alt="">
-                    <div class="more">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/men-carousel/Men_Outerwear_1_9.jpg" alt="">
+                        <div class="more">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/men-carousel/Men_Fragrance_1_10.jpg" alt="">
-                    <div class="more">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/men-carousel/Men_Fragrance_1_10.jpg" alt="">
+                        <div class="more">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/men-carousel/Men_Eastern_1_5.jpg" alt="">
-                    <div class="more">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/men-carousel/Men_Eastern_1_5.jpg" alt="">
+                        <div class="more">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/men-carousel/Men_Shirt_1_10.jpg" alt="">
-                    <div class="more">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/men-carousel/Men_Shirt_1_10.jpg" alt="">
+                        <div class="more">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/men-carousel/Men_Tees_1_10.jpg" alt="">
-                    <div class="more">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/men-carousel/Men_Tees_1_10.jpg" alt="">
+                        <div class="more">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/men-carousel/Men_Pants_1_6.jpg" alt="">
-                    <div class="more">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/men-carousel/Men_Pants_1_6.jpg" alt="">
+                        <div class="more">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/men-carousel/Men_Uns_1.jpg" alt="">
-                    <div class="more">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/men-carousel/Men_Uns_1.jpg" alt="">
+                        <div class="more">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/men-carousel/download.jpeg" alt="">
-                    <div class="more">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/men-carousel/download.jpeg" alt="">
+                        <div class="more">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/men-carousel/download (1).jpeg" alt="">
-                    <div class="more">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/men-carousel/download (1).jpeg" alt="">
+                        <div class="more">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -563,65 +588,65 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/kids-carousel/Boy_Eastern_1.jpg" alt="">
-                    <div class="more">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/kids-carousel/Boy_Eastern_1.jpg" alt="">
+                        <div class="more">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/kids-carousel/boys_kurta_2_1.jpg" alt="">
-                    <div class="more">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/kids-carousel/boys_kurta_2_1.jpg" alt="">
+                        <div class="more">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/kids-carousel/Boys_Tees_1_3.jpg" alt="">
-                    <div class="more">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/kids-carousel/Boys_Tees_1_3.jpg" alt="">
+                        <div class="more">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/girls-carousel/Girls_Denim_1.jpeg" alt="">
-                    <div class="more">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/girls-carousel/Girls_Denim_1.jpeg" alt="">
+                        <div class="more">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/girls-carousel/Girls_Pret_3_4.jpg" alt="">
-                    <div class="more">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/girls-carousel/Girls_Pret_3_4.jpg" alt="">
+                        <div class="more">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/kids-carousel/boys_shirt_b_1.jpg" alt="">
-                    <div class="more">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/kids-carousel/boys_shirt_b_1.jpg" alt="">
+                        <div class="more">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/kids-carousel/kid.jpg" alt="">
-                    <div class="more">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/kids-carousel/kid.jpg" alt="">
+                        <div class="more">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
 
@@ -644,29 +669,29 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/home carousel/bath_sheet_2_2_1.jpg" alt="">
-                    <div class="more">
-                    <h3>Lorem, ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/home carousel/bath_sheet_2_2_1.jpg" alt="">
+                        <div class="more">
+                            <h3>Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/home carousel/bath_towels_2_1_1.jpg" alt="">
-                    <div class="more">
-                    <h3>Bath Towels</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/home carousel/bath_towels_2_1_1.jpg" alt="">
+                        <div class="more">
+                            <h3>Bath Towels</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide main">
                     <a href="#"><!--Add link to the Catgory page -->
-                    <img src="./images/home carousel/hand_towel_2_1_1.jpg" alt="">
-                    <div class="more">
-                    <h3>Hand Towels</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
-                    </div>
+                        <img src="./images/home carousel/hand_towel_2_1_1.jpg" alt="">
+                        <div class="more">
+                            <h3>Hand Towels</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ducimus?</p>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -718,7 +743,9 @@
             </div>
         </div>
         <div class="copyright">
-           <a href=""><p>&copy; 2023- Studio Hammad. &#8482;</p></a>
+            <a href="">
+                <p>&copy; 2023- Studio Hammad. &#8482;</p>
+            </a>
         </div>
     </footer>
 
@@ -751,9 +778,12 @@
 
 
     <script src="./js/itemvalue.js"></script>
+    <script src="./js/userclick.js"></script>
     <script src="./js/cart.js"></script>
     <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="./js/userclick.js"></script>
     <script>
         let perView = 1;
         if (window.innerWidth > 600 && window.innerWidth < 980) {

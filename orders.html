@@ -132,9 +132,23 @@
                 </div>
             </div>
             <div>
-                <a href="login.html">
-                    <img src="./images/user.jpg" alt="" id="user">
-                </a>
+                <img src="./images/user.jpg" alt="" id="user" class="userclickable" onclick="handleOnClick()">
+
+                <div class="user-opt" id="userclick">
+                    <div class="user-opt-content">
+                        <p>Contact Us</p>
+                        <i class="fa-solid fa-message"></i>
+                    </div>
+                    <div class="user-opt-content">
+                        <p>My Order</p>
+                        <i class="fa-solid fa-location-arrow"></i>
+                    </div>
+                    <div class="user-opt-content">
+                        <p>Logout</p>
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -172,7 +186,9 @@
             </div>
             <div class="order-det">
                 <div class="order-num det">
-                    <a href="./clientDes.html"><p><span>#85141</span></p></a>
+                    <a href="./clientDes.html">
+                        <p><span>#85141</span></p>
+                    </a>
                 </div>
                 <div class="status det">
                     <p>Delivered</p>
@@ -190,7 +206,9 @@
             </div>
             <div class="order-det">
                 <div class="order-num det">
-                    <a href="./clientDes.html"><p><span>#85141</span></p></a>
+                    <a href="./clientDes.html">
+                        <p><span>#85141</span></p>
+                    </a>
                 </div>
                 <div class="status det">
                     <p>Delivered</p>
@@ -208,7 +226,9 @@
             </div>
             <div class="order-det">
                 <div class="order-num det">
-                    <a href="./clientDes.html"><p><span>#85141</span></p></a>
+                    <a href="./clientDes.html">
+                        <p><span>#85141</span></p>
+                    </a>
                 </div>
                 <div class="status det">
                     <p>Delivered</p>
@@ -226,7 +246,9 @@
             </div>
             <div class="order-det">
                 <div class="order-num det">
-                    <a href="./clientDes.html"><p><span>#85141</span></p></a>
+                    <a href="./clientDes.html">
+                        <p><span>#85141</span></p>
+                    </a>
                 </div>
                 <div class="status det">
                     <p>Delivered</p>
@@ -329,32 +351,33 @@
                     <p>Rs: <span class="pr">450</span></p>
                 </div>
             </div>
-            </div>
+        </div>
 
 
     </div>
     <script>
         const yourOrder = document.getElementById("your-orders");
         const productInfo = document.getElementById("products-Info");
-        yourOrder.addEventListener("click", ()=> {
+        yourOrder.addEventListener("click", () => {
             productInfo.classList.remove("active")
             yourOrder.classList.toggle("active")
             const prev = document.querySelector(".prev-order");
             const prInfo = document.querySelector(".pr-info");
             prev.style.display = "flex";
-            prInfo.style.display = "none";            
+            prInfo.style.display = "none";
         })
-        productInfo.addEventListener("click", ()=> {
+        productInfo.addEventListener("click", () => {
             yourOrder.classList.remove("active")
             productInfo.classList.toggle("active")
             const prev = document.querySelector(".prev-order");
             const prInfo = document.querySelector(".pr-info");
             prev.style.display = "none";
-            prInfo.style.display = "flex";            
+            prInfo.style.display = "flex";
         })
     </script>
     <script src="./js/itemvalue.js"></script>
     <script src="./js/cart.js"></script>
+    <script src="./js/userclick.js"></script>
 </body>
 
 </html>

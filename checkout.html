@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
 </head>
+
 <body>
     <!-- HEADER -->
     <header>
@@ -34,7 +35,7 @@
         <input type="checkbox" id="menu-bar">
         <nav class="navbar">
             <ul>
-                
+
                 <li class="ex">
                     <a href="./cart.html"><i class="fa fa-shopping-bag bag"></i></a>
                     <input type="text" class="search-bar" placeholder="Search">
@@ -42,7 +43,7 @@
                     <a href="login.html">
                         <img src="./images/user.jpg" alt="">
                     </a>
-                </div>
+                    </div>
 
                 </li>
                 <li><a href="./index.html">Home</a></li>
@@ -97,7 +98,7 @@
         </nav>
 
         <div class="user-cart">
-        <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
+            <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
             <div class="cart" id="cart">
                 <i class="fa fa-shopping-bag" id="cart"></i>
                 <div class="popup" id="popup">
@@ -123,21 +124,37 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                     <div class="total">
                         <button class="checkout-btn"><a href="./checkout.html">Checkout</a></button>
                         <div class="total_container">
-                            <h3><pre>Total: $ </pre></h3>
+                            <h3>
+                                <pre>Total: $ </pre>
+                            </h3>
                             <p id="total-price">120</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div>
-                <a href="login.html">
-                    <img src="./images/user.jpg" alt="" id="user">
-                </a>
+                <img src="./images/user.jpg" alt="" id="user" class="userclickable" onclick="handleOnClick()">
+
+                <div class="user-opt" id="userclick">
+                    <div class="user-opt-content">
+                        <p>Contact Us</p>
+                        <i class="fa-solid fa-message"></i>
+                    </div>
+                    <div class="user-opt-content">
+                        <p>My Order</p>
+                        <i class="fa-solid fa-location-arrow"></i>
+                    </div>
+                    <div class="user-opt-content">
+                        <p>Logout</p>
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -152,37 +169,37 @@
             <div class="main">
                 <div class="details">
                     <label for="first-name">First Name</label>
-                    <input type="text" >
+                    <input type="text">
                 </div>
                 <div class="details">
                     <label for="last-name">Last Name</label>
-                    <input type="text" >
+                    <input type="text">
                 </div>
                 <div class="details">
                     <label for="address">Address</label>
-                    <input type="text" >
+                    <input type="text">
                 </div>
                 <div class="details">
                     <label for="city">City</label>
-                    <input type="text" >
+                    <input type="text">
                 </div>
                 <div class="details">
                     <label for="state">State</label>
-                    <input type="text" >
+                    <input type="text">
                 </div>
                 <div class="details">
                     <label for="zip">Zip Code</label>
-                    <input type="text" >
+                    <input type="text">
                 </div>
                 <h3>Contact Information</h3>
                 <div class="contact-info">
                     <div class="details">
                         <label for="email">Email Address</label>
-                        <input type="email" >
+                        <input type="email">
                     </div>
                     <div class="details">
                         <label for="number">Phone Number</label>
-                        <input type="text" >
+                        <input type="text">
                     </div>
                     <div class="details">
                         <button>Proceed!</button>
@@ -200,7 +217,9 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ullam!</p>
                     </div>
                     <div class="price-each">
-                        <h3><pre>Price: </pre></h3>
+                        <h3>
+                            <pre>Price: </pre>
+                        </h3>
                         <span class="price"> <span>$</span> 45</span>
                     </div>
                 </div>
@@ -222,8 +241,8 @@
                 </div>
             </div>
         </div>
-        
-        
+
+
     </div>
 
 
@@ -267,11 +286,15 @@
             </div>
         </div>
         <div class="copyright">
-            <a href=""><p>&copy; 2023- Studio Hammad. &#8482;</p></a>
-         </div>
+            <a href="">
+                <p>&copy; 2023- Studio Hammad. &#8482;</p>
+            </a>
+        </div>
     </footer>
 
     <script src="./js/itemvalue.js"></script>
     <script src="./js/cart.js"></script>
+    <script src="./js/userclick.js"></script>
 </body>
+
 </html>

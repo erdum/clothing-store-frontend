@@ -132,9 +132,23 @@
                 </div>
             </div>
             <div>
-                <a href="login.html">
-                    <img src="./images/user.jpg" alt="" id="user">
-                </a>
+                <img src="./images/user.jpg" alt="" id="user" class="userclickable" onclick="handleOnClick()">
+
+                <div class="user-opt" id="userclick">
+                    <div class="user-opt-content">
+                        <p>Contact Us</p>
+                        <i class="fa-solid fa-message"></i>
+                    </div>
+                    <div class="user-opt-content">
+                        <p>My Order</p>
+                        <i class="fa-solid fa-location-arrow"></i>
+                    </div>
+                    <div class="user-opt-content">
+                        <p>Logout</p>
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -254,6 +268,7 @@
     </script>
     <script src="./js/itemvalue.js"></script>
     <script src="./js/cart.js"></script>
+    <script src="./js/userclick.js"></script>
 </body>
 
 </html>

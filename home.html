@@ -28,7 +28,7 @@
         <input type="checkbox" id="menu-bar">
         <nav class="navbar">
             <ul>
-                
+
                 <li class="ex">
                     <a href="./cart.html"><i class="fa fa-shopping-bag bag"></i></a>
                     <input type="text" class="search-bar" placeholder="Search">
@@ -36,7 +36,7 @@
                     <a href="login.html">
                         <img src="./images/user.jpg" alt="">
                     </a>
-                </div>
+                    </div>
 
                 </li>
                 <li><a href="./index.html">Home</a></li>
@@ -91,7 +91,7 @@
         </nav>
 
         <div class="user-cart">
-        <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
+            <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
             <div class="cart" id="cart">
                 <i class="fa fa-shopping-bag" id="cart"></i>
                 <div class="popup" id="popup">
@@ -117,21 +117,37 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                     <div class="total">
                         <button class="checkout-btn"><a href="./checkout.html">Checkout</a></button>
                         <div class="total_container">
-                            <h3><pre>Total: $ </pre></h3>
+                            <h3>
+                                <pre>Total: $ </pre>
+                            </h3>
                             <p id="total-price">120</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div>
-                <a href="login.html">
-                    <img src="./images/user.jpg" alt="" id="user">
-                </a>
+                <img src="./images/user.jpg" alt="" id="user" class="userclickable" onclick="handleOnClick()">
+
+                <div class="user-opt" id="userclick">
+                    <div class="user-opt-content">
+                        <p>Contact Us</p>
+                        <i class="fa-solid fa-message"></i>
+                    </div>
+                    <div class="user-opt-content">
+                        <p>My Order</p>
+                        <i class="fa-solid fa-location-arrow"></i>
+                    </div>
+                    <div class="user-opt-content">
+                        <p>Logout</p>
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -156,10 +172,11 @@
                         </div>
                         <h4 class="price">78</h4>
                     </div>
-                    <a href="#" class="addToCart"><i class="fa-solid fa-cart-shopping" class="addToCart"></i>Add to Cart</a>
+                    <a href="#" class="addToCart"><i class="fa-solid fa-cart-shopping" class="addToCart"></i>Add to
+                        Cart</a>
                 </div>
-                </a>
-                <a href="./description.html">
+            </a>
+            <a href="./description.html">
                 <div class="pro">
                     <img src="./images/men/f2.jpg" alt="">
                     <div class="des">
@@ -176,8 +193,8 @@
                     </div>
                     <a href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
                 </div>
-                </a>
-                <a href="./description.html">
+            </a>
+            <a href="./description.html">
                 <div class="pro">
                     <img src="./images/men/f3.jpg" alt="">
                     <div class="des">
@@ -194,8 +211,8 @@
                     </div>
                     <a href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
                 </div>
-                </a>
-                <a href="./description.html">
+            </a>
+            <a href="./description.html">
                 <div class="pro">
                     <img src="./images//men/f4.jpg" alt="">
                     <div class="des">
@@ -212,8 +229,8 @@
                     </div>
                     <a href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
                 </div>
-                </a>
-                <a href="./description.html">
+            </a>
+            <a href="./description.html">
                 <div class="pro">
                     <img src="./images/men/f5.jpg" alt="">
                     <div class="des">
@@ -230,8 +247,8 @@
                     </div>
                     <a href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
                 </div>
-                </a>
-                <a href="./description.html">
+            </a>
+            <a href="./description.html">
                 <div class="pro">
                     <img src="./images/men/f6.jpg" alt="">
                     <div class="des">
@@ -248,8 +265,8 @@
                     </div>
                     <a href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
                 </div>
-                </a>
-                <a href="./description.html">
+            </a>
+            <a href="./description.html">
                 <div class="pro">
                     <img src="./images/men/f7.jpg" alt="">
                     <div class="des">
@@ -266,8 +283,8 @@
                     </div>
                     <a href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
                 </div>
-                </a>
-                <a href="./description.html">
+            </a>
+            <a href="./description.html">
                 <div class="pro">
                     <img src="./images/men/f8.jpg" alt="">
                     <div class="des">
@@ -284,7 +301,7 @@
                     </div>
                     <a href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
                 </div>
-                </a>
+            </a>
         </div>
     </section>
 
@@ -329,13 +346,16 @@
             </div>
         </div>
         <div class="copyright">
-            <a href=""><p>&copy; 2023- Studio Hammad. &#8482;</p></a>
-         </div>
+            <a href="">
+                <p>&copy; 2023- Studio Hammad. &#8482;</p>
+            </a>
+        </div>
     </footer>
 
 
     <script src="./js/itemvalue.js"></script>
     <script src="./js/cart.js"></script>
+    <script src="./js/userclick.js"></script>
 
 </body>
 

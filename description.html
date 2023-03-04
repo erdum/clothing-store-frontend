@@ -30,7 +30,7 @@
         <input type="checkbox" id="menu-bar">
         <nav class="navbar">
             <ul>
-                
+
                 <li class="ex">
                     <a href="./cart.html"><i class="fa fa-shopping-bag bag"></i></a>
                     <input type="text" class="search-bar" placeholder="Search">
@@ -38,7 +38,7 @@
                     <a href="login.html">
                         <img src="./images/user.jpg" alt="">
                     </a>
-                </div>
+                    </div>
 
                 </li>
                 <li><a href="./index.html">Home</a></li>
@@ -93,7 +93,7 @@
         </nav>
 
         <div class="user-cart">
-        <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
+            <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
             <div class="cart" id="cart">
                 <i class="fa fa-shopping-bag" id="cart"></i>
                 <div class="popup" id="popup">
@@ -119,82 +119,102 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                     <div class="total">
                         <button class="checkout-btn"><a href="./checkout.html">Checkout</a></button>
                         <div class="total_container">
-                            <h3><pre>Total: $ </pre></h3>
+                            <h3>
+                                <pre>Total: $ </pre>
+                            </h3>
                             <p id="total-price">120</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div>
-                <a href="login.html">
-                    <img src="./images/user.jpg" alt="" id="user">
-                </a>
+                <img src="./images/user.jpg" alt="" id="user" class="userclickable" onclick="handleOnClick()">
+
+                <div class="user-opt" id="userclick">
+                    <div class="user-opt-content">
+                        <p>Contact Us</p>
+                        <i class="fa-solid fa-message"></i>
+                    </div>
+                    <div class="user-opt-content">
+                        <p>My Order</p>
+                        <i class="fa-solid fa-location-arrow"></i>
+                    </div>
+                    <div class="user-opt-content">
+                        <p>Logout</p>
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </div>
+                </div>
+
             </div>
         </div>
 
     </header>
     <!-- Description -->
     <div class="des-container">
-    
-      <div class="display">
-        <div class="main-img">
-            <img src="./images/girls-carousel/Girls_Pret_3_4.jpg" alt="" id="main-img">
-        </div>
-        <div class="sub-img">
-            <img src="./images/girls-carousel/Girls_Pret_3_4.jpg" alt="" id="first-img">
-            <img src="./images/kids-carousel/boys_shirt_b_1.jpg" alt="" id="second-img">
-            <img src="./images/kids-carousel/Boy_Eastern_1.jpg" alt="" id="third-img">
-            <img src="./images/kids-carousel/boys_kurta_2_1.jpg" alt="" id="fourth-img">
-        </div>
-      </div>
-      <div class="describe">
-        <div class="first">
-        <h4>MINIMAL WOMEN COLLECTION</h4>
-        <h2>Light Gray Top for Women</h2>
-        <span id="off">(20%off)</span>
-        <h3><pre>$</pre> <span>45</span></h3>
-        <p id="extra">(Additional Tax may Apply on checkout)</p>
-        <div>
-            <div class="size">
-                <h4>Select Size</h4>
-                <h5>Size Chart ▼</h5>
-            </div>
-            <div class="measures">
-                <div id="div1">S</div>
-                <div id="div2">M</div>
-                <div id="div3">L</div>
-                <div id="div4">XL</div>
-                <div id="div5">XXL</div>
-            </div>
-        </div>
-        <p id="left">3 Left</p>
 
-        <div class="buttons">
-            <!-- <button id="wishlist"><i class="fa-solid fa-heart" id="wish"> </i> </button> -->
-            <button id="cart-btn"><i class="fa-solid fa-shopping-bag" id="cartIcon"></i> <span id="cartText"> Add to Cart</span></button>
-        </div>
-        </div>
-        <div class="second">
-            <div class="pr-det">
-                <h3>PRODUCT DETAILS:</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid et in adipisci, alias vero aspernatur.</p>
+        <div class="display">
+            <div class="main-img">
+                <img src="./images/girls-carousel/Girls_Pret_3_4.jpg" alt="" id="main-img">
             </div>
-            <div class="mat-care">
-                <h3>MATERIAL & CARE:</h3>
-            <ul>
-                <li>Cotton</li>
-                <li>Machine Wash</li>
-            </ul>
+            <div class="sub-img">
+                <img src="./images/girls-carousel/Girls_Pret_3_4.jpg" alt="" id="first-img">
+                <img src="./images/kids-carousel/boys_shirt_b_1.jpg" alt="" id="second-img">
+                <img src="./images/kids-carousel/Boy_Eastern_1.jpg" alt="" id="third-img">
+                <img src="./images/kids-carousel/boys_kurta_2_1.jpg" alt="" id="fourth-img">
             </div>
         </div>
-      </div>
+        <div class="describe">
+            <div class="first">
+                <h4>MINIMAL WOMEN COLLECTION</h4>
+                <h2>Light Gray Top for Women</h2>
+                <span id="off">(20%off)</span>
+                <h3>
+                    <pre>$</pre> <span>45</span>
+                </h3>
+                <p id="extra">(Additional Tax may Apply on checkout)</p>
+                <div>
+                    <div class="size">
+                        <h4>Select Size</h4>
+                        <h5>Size Chart ▼</h5>
+                    </div>
+                    <div class="measures">
+                        <div id="div1">S</div>
+                        <div id="div2">M</div>
+                        <div id="div3">L</div>
+                        <div id="div4">XL</div>
+                        <div id="div5">XXL</div>
+                    </div>
+                </div>
+                <p id="left">3 Left</p>
+
+                <div class="buttons">
+                    <!-- <button id="wishlist"><i class="fa-solid fa-heart" id="wish"> </i> </button> -->
+                    <button id="cart-btn"><i class="fa-solid fa-shopping-bag" id="cartIcon"></i> <span id="cartText">
+                            Add to Cart</span></button>
+                </div>
+            </div>
+            <div class="second">
+                <div class="pr-det">
+                    <h3>PRODUCT DETAILS:</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid et in adipisci, alias vero
+                        aspernatur.</p>
+                </div>
+                <div class="mat-care">
+                    <h3>MATERIAL & CARE:</h3>
+                    <ul>
+                        <li>Cotton</li>
+                        <li>Machine Wash</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-    
+
     <!-- FOOTER -->
     <footer class="section-p1">
         <div class="col">
@@ -236,12 +256,15 @@
             </div>
         </div>
         <div class="copyright">
-            <a href=""><p>&copy; 2023- Studio Hammad. &#8482;</p></a>
-         </div>
+            <a href="">
+                <p>&copy; 2023- Studio Hammad. &#8482;</p>
+            </a>
+        </div>
     </footer>
     <script src="./js/descriptionImg.js"></script>
     <script src="./js/itemvalue.js"></script>
     <script src="./js/cart.js"></script>
+    <script src="./js/userclick.js"></script>
 </body>
 
 </html>
