@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background: url(../images/Bacground\ Login.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -15,46 +16,52 @@ body{
     justify-content: center;
     align-items: center;
 }
-.back{
+
+.back {
     position: fixed;
     background: #00acee;
     color: #fff;
-    width: 40px ;
-    height: 40px ;
+    width: 40px;
+    height: 40px;
     top: 4px;
     border-radius: 50%;
     font-size: 24px;
     text-align: center;
-    padding-top:10px;
+    padding-top: 10px;
     right: 10px;
 }
-.sign-in-form{
+
+.sign-in-form {
     width: 300px;
     height: 70%;
-    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
     background: #0e97f9a3;
     padding: 20px;
     margin: 6% auto 2%;
     text-align: center;
     border-radius: 10px;
 }
-.sign-in-form h1{
+
+.sign-in-form h1 {
     color: #0077be;
     margin-bottom: 30px;
 }
-.input-box{
+
+.input-box {
     color: #0077be;
     border-radius: 20px;
-    padding:10px;
+    padding: 10px;
     margin: 10px 0;
     width: 90%;
     border: 2px solid #0077be;
     outline: none;
 }
-.input-box::placeholder{
+
+.input-box::placeholder {
     color: #0077be;
 }
-button{
+
+button {
     color: #fff;
     width: 100%;
     border-radius: 20px;
@@ -66,31 +73,38 @@ button{
     cursor: pointer;
 
 }
-a{
+
+a {
     text-decoration: none;
     color: #0077be;
 }
-.signin-btn{
+
+.signin-btn {
     background-color: #0077be;
     color: #fff;
 }
-.twitter-btn, .twitter-btn a{
+
+.twitter-btn,
+.twitter-btn a {
     background-color: #00acee;
     color: #fff;
 }
-.gmail-btn, .gmail-btn a{
+
+.gmail-btn,
+.gmail-btn a {
     background-color: #ffd30c;
     color: red;
 }
 
-hr{
+hr {
     margin-top: 30px;
     width: 100%;
     outline: none;
     border: 1px solid #FDF9EE;
 }
-.or{
-    background:#fff;
+
+.or {
+    background: #fff;
     color: #0077be;
     width: 40px;
     height: 40px;
@@ -98,16 +112,51 @@ hr{
     margin: -20px auto 10px;
 }
 
-p{
+p {
     padding-top: 10px;
     color: #fff;
 
 }
-img{
+
+img {
     width: 70px;
     height: 70px;
-    border-radius:50%;
+    border-radius: 50%;
     margin-top: -50px;
     background-color: #fff;
 
+}
+
+
+/* Fixed layout bugs in mobile devices */
+
+@media(max-width:768px) {
+    img {
+        width: 100px;
+        height: 100px;
+        margin-top: -70px;
+    }
+
+    .sign-in-form {
+        height: auto;
+        width: 80%;
+    }
+
+    button {
+        height: 5rem;
+        font-size: 20px;
+    }
+
+    .input-box {
+        height: 5rem;
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .check-box {
+        font-size: 24px;
+    }
 }
